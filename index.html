@@ -1,16 +1,551 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>LiveLab 4 Demo</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomadiq Travel Destinations</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #00b4db, #0083b0);
+      color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .logo span {
+      margin-right: 8px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffdd59;
+    }
+  </style>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
+  <header>
+    <div class="logo"><span>🌍</span> Nomadiq Travel Destinations</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomadiq Travel Destinations</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: #F4EBD0; /* Warm Sand Beige */
+      color: #3B6B50; /* Deep Forest Green */
+    }
 
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #7AC7E3, #A8D5BA); /* Sky Blue to Soft Leaf Green */
+      color: #3B6B50; /* Deep Forest Green */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5em;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo span {
+      margin-right: 8px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #356E8C; /* Ocean Blue */
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #3B6B50; /* Deep Forest Green */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><span>🌍</span> Nomadiq Travel Destinations</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomadiq Travel Destinations</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: #F4EBD0; /* Warm Sand Beige */
+      color: #3B6B50; /* Deep Forest Green */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #7AC7E3, #A8D5BA); /* Sky Blue to Soft Leaf Green */
+      color: #3B6B50; /* Deep Forest Green */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5em;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo span {
+      margin-right: 8px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #356E8C; /* Ocean Blue */
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #3B6B50; /* Deep Forest Green */
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #A8D5BA; /* Soft Leaf Green */
+      color: #356E8C; /* Ocean Blue */
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #3B6B50; /* Deep Forest Green */
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #3B6B50;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><span>🌍</span> Nomadiq Travel Destinations</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Explore Sustainable Travel</h1>
+    <p>
+      Discover how your journeys can create positive impacts for local communities and the environment.
+      At Nomadiq Travel Destinations, we believe in travel that respects nature, nurtures cultures, and
+      inspires meaningful connections around the globe.
+    </p>
+  </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomadiq Travel Destinations</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: #F4EBD0; /* Warm Sand Beige */
+      color: #3B6B50; /* Deep Forest Green */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #7AC7E3, #A8D5BA); /* Sky Blue to Soft Leaf Green */
+      color: #3B6B50; /* Deep Forest Green */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5em;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo span {
+      margin-right: 8px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #356E8C; /* Ocean Blue */
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #3B6B50; /* Deep Forest Green */
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #A8D5BA; /* Soft Leaf Green */
+      color: #356E8C; /* Ocean Blue */
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #3B6B50; /* Deep Forest Green */
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #3B6B50;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1em;
+      color: white;
+      background-color: #356E8C; /* Ocean Blue */
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #3B6B50; /* Deep Forest Green */
+    }
+
+    .content-section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #F4EBD0; /* Warm Sand Beige */
+    }
+
+    .content-section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #356E8C; /* Ocean Blue */
+    }
+
+    .content-section p {
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      font-size: 1.05em;
+      line-height: 1.6;
+      color: #3B6B50;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><span>🌍</span> Nomadiq Travel Destinations</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Explore Sustainable Travel</h1>
+    <p>
+      Discover how your journeys can create positive impacts for local communities and the environment.
+      At Nomadiq Travel Destinations, we believe in travel that respects nature, nurtures cultures, and
+      inspires meaningful connections around the globe.
+    </p>
+    <a href="#" class="btn">Plan Your Trip</a>
+  </section>
+
+  <section class="content-section">
+    <h2>About Nomadiq Travel Destinations</h2>
+    <p>
+      Nomadiq Travel Destinations is dedicated to eco-friendly travel experiences that celebrate the beauty of our planet
+      while preserving it for future generations. We focus on sustainable tourism practices, supporting local communities,
+      and creating adventures that foster harmony between people and nature.
+    </p>
+    <a href="#" class="btn">Learn More</a>
+  </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomadiq Travel Destinations</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: #F4EBD0; /* Warm Sand Beige */
+      color: #3B6B50; /* Deep Forest Green */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: linear-gradient(90deg, #7AC7E3, #A8D5BA); /* Sky Blue to Soft Leaf Green */
+      color: #3B6B50; /* Deep Forest Green */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.4em;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .logo span {
+      margin-right: 8px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      margin: 5px 10px;
+      text-decoration: none;
+      color: #356E8C; /* Ocean Blue */
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #3B6B50; /* Deep Forest Green */
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #A8D5BA; /* Soft Leaf Green */
+      color: #356E8C; /* Ocean Blue */
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #3B6B50; /* Deep Forest Green */
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      font-size: 1em;
+      line-height: 1.6;
+      color: #3B6B50;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1em;
+      color: white;
+      background-color: #356E8C; /* Ocean Blue */
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #3B6B50; /* Deep Forest Green */
+    }
+
+    .content-section {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #F4EBD0; /* Warm Sand Beige */
+    }
+
+    .content-section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #356E8C; /* Ocean Blue */
+    }
+
+    .content-section p {
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      font-size: 1em;
+      line-height: 1.6;
+      color: #3B6B50;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Media Query for larger screens */
+    @media (min-width: 600px) {
+      header {
+        flex-wrap: nowrap;
+      }
+      .logo {
+        margin-bottom: 0;
+      }
+      .hero {
+        padding: 100px 40px;
+      }
+      .hero h1 {
+        font-size: 2.5em;
+      }
+      .hero p {
+        font-size: 1.1em;
+      }
+      .content-section {
+        padding: 80px 40px;
+      }
+      .content-section h2 {
+        font-size: 2em;
+      }
+      .content-section p {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><span>🌍</span> Nomadiq Travel Destinations</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Explore Sustainable Travel</h1>
+    <p>
+      Discover how your journeys can create positive impacts for local communities and the environment.
+      At Nomadiq Travel Destinations, we believe in travel that respects nature, nurtures cultures, and
+      inspires meaningful connections around the globe.
+    </p>
+    <a href="#" class="btn">Plan Your Trip</a>
+  </section>
+
+  <section class="content-section">
+    <h2>About Nomadiq Travel Destinations</h2>
+    <p>
+      Nomadiq Travel Destinations is dedicated to eco-friendly travel experiences that celebrate the beauty of our planet
+      while preserving it for future generations. We focus on sustainable tourism practices, supporting local communities,
+      and creating adventures that foster harmony between people and nature.
+    </p>
+    <a href="#" class="btn">Learn More</a>
+  </section>
+</body>
 </html>
